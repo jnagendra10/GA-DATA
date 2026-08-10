@@ -1,3 +1,4 @@
+---
 name: Deploy App
 on:
   push:
@@ -36,14 +37,11 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-    steps: 
-        - name: get build artifacts
-          uses: actions/download-artifact@v3
-          with:
-            name: dist-files
-            path: dist
-        -	name: output contents
-          run:ls 
-
-        - name: Deploy
-          run: echo "Deploying..."
+      - name: get build artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: dist-files
+          path: dist
+      - name: output contents run:ls
+      - name: Deploy
+        run: echo "Deploying..."
