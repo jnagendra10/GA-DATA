@@ -42,7 +42,7 @@ jobs:
           with:
             name: dist-files
             path: dist
-        -	Name: output contents
+        -	name: output contents
           run:ls 
 
         - name: Deploy
