@@ -1,5 +1,5 @@
 ---
-name: Deploy App
+name: Deploy Application
 on:
   push:
     branches:
